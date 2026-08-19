@@ -11,7 +11,7 @@ export const profile = {
     school: "Loyola Marymount University",
     degree: "B.S. — Information Systems & Business Analytics, Entrepreneurship",
     minor: "Minor: Computer Science",
-    graduation: "Expected May 2026",
+    graduation: "Graduated May 2026",
     gpa: "3.81",
   },
   location: "Los Angeles, CA",
@@ -19,7 +19,7 @@ export const profile = {
   github: "https://github.com/valeriasanzx",
   // TODO(valeria): add your LinkedIn URL
   linkedin: "",
-  languages: ["Spanish (native)", "English (fluent)"],
+  languages: ["Spanish (fluent)", "English (fluent)"],
   certifications: [
     "Bloomberg Market Concepts (BMC)",
     "Business, Engineering, Science & Technology (BEST) Bootcamp",

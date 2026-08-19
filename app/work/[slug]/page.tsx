@@ -53,6 +53,28 @@ export default async function CaseStudy({ params }: PageProps<"/work/[slug]">) {
           ))}
         </Section>
 
+        {/* Demo */}
+        {p.demo && (
+          <Section title="See it running">
+            <figure>
+              <video
+                controls
+                playsInline
+                preload="metadata"
+                poster={p.demo.poster}
+                className="w-full rounded-xl border border-border bg-black shadow-sm"
+              >
+                <source src={p.demo.src} type="video/mp4" />
+                Your browser can&apos;t play this video.{" "}
+                <a href={p.demo.src} className="text-primary underline">Download it instead.</a>
+              </video>
+              <figcaption className="mt-2 text-xs text-muted-foreground">
+                {p.demo.caption}
+              </figcaption>
+            </figure>
+          </Section>
+        )}
+
         {/* Pipeline */}
         <Section title="How it works">
           <ol className="relative space-y-0 border-l border-border pl-8">

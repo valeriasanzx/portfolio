@@ -28,6 +28,8 @@ export type Project = {
   codePublic: boolean;
   repo?: string;
   codeNote?: string;
+  /** Optional demo. `src` is a file in /public; `poster` is an optional still. */
+  demo?: { src: string; poster?: string; caption: string };
 };
 
 export const projects: Project[] = [
@@ -81,6 +83,12 @@ export const projects: Project[] = [
       },
     ],
     stack: ["Node.js", "Express", "PostgreSQL", "Roboflow", "FFmpeg", "Next.js", "TypeScript", "Railway"],
+    // Uncomment once public/demo/bloom-detection.mp4 exists — see README.
+    // demo: {
+    //   src: "/demo/bloom-detection.mp4",
+    //   poster: "/demo/bloom-detection.jpg",
+    //   caption: "The detection model running against creator video frames.",
+    // },
     codePublic: false,
     codeNote:
       "Built during my internship, so the repository is Bloom's and stays private. The write-up above and the walkthrough below cover the architecture and the decisions.",
