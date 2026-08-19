@@ -184,7 +184,7 @@ export const projects: Project[] = [
       // if you say they're estimates.
       { value: "—", label: "Invoices processed per month", note: "TODO" },
       { value: "—", label: "Minutes per invoice → automated", note: "TODO" },
-      { value: "~19s", label: "End-to-end run time per invoice", note: "Observed in production execution logs" },
+      { value: "~19s", label: "Machine run time, one observed execution", note: "Workflow runtime, not the time saved — replace this with minutes-per-invoice once you have it" },
       { value: "0", label: "Payments made automatically", note: "By design — bills open unpaid for human approval" },
     ],
     decisions: [
@@ -203,8 +203,10 @@ export const projects: Project[] = [
     ],
     stack: ["n8n", "Claude", "QuickBooks Online API", "Google Drive API", "Gmail API"],
     codePublic: true,
+    // TODO(valeria): export the workflow from n8n, strip credentials/account IDs/
+    // vendor names, commit it to the repo below, then set `repo` to the URL.
     codeNote:
-      "Workflow JSON is published with all credentials, account IDs, and vendor data stripped.",
+      "Built for a small company outside of my employment, so I can share how it works in detail.",
   },
 ];
 

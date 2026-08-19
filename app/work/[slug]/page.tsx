@@ -74,7 +74,7 @@ export default async function CaseStudy({ params }: PageProps<"/work/[slug]">) {
         {/* Outcome */}
         <Section title="Outcome">
           <div className="grid gap-4 sm:grid-cols-2">
-            {p.outcome.map((m) => (
+            {p.outcome.filter((m) => m.value !== "—").map((m) => (
               <div key={m.label} className="rounded-xl border border-border bg-card p-5">
                 <p className="text-2xl font-semibold tracking-tight text-primary">{m.value}</p>
                 <p className="mt-1 text-sm font-medium">{m.label}</p>
