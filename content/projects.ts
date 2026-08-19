@@ -62,13 +62,9 @@ export const projects: Project[] = [
       { step: "Refresh", detail: "Hourly scheduler re-scrapes impressions so view counts stay current" },
     ],
     outcome: [
-      // TODO(valeria): replace the placeholders below with your real numbers.
-      // Anything you cannot substantiate, delete the entry entirely — a short
-      // honest list beats a long padded one in an interview.
-      { value: "—", label: "Posts labeled per day", note: "TODO: your real volume" },
-      { value: "—", label: "Minutes per post → seconds", note: "TODO: your before/after" },
-      { value: "0.80", label: "Confidence floor for a logged detection", note: "Below this, the post is left for a human" },
-      { value: "Hourly", label: "Impressions refresh", note: "Replaced a metric that was stale on arrival" },
+      { value: "~150 / day", label: "Creator posts labeled automatically", note: "Average daily volume, previously tagged by hand" },
+      { value: "0.80", label: "Confidence floor for a logged detection", note: "Below this the post is left unlabeled for a human — a blank is a cheaper error than a confident wrong answer" },
+      { value: "Hourly", label: "Impressions refresh", note: "Replaced a metric that was stale the moment it was written" },
     ],
     decisions: [
       {
@@ -120,9 +116,8 @@ export const projects: Project[] = [
     ],
     outcome: [
       { value: "15 min → seconds", label: "Per-image review time", note: "Measured against the manual review it replaced" },
-      // TODO(valeria): fill these in with numbers you can defend.
-      { value: "—", label: "Brand clients live on the platform", note: "TODO" },
-      { value: "—", label: "Items moderated per week", note: "TODO" },
+      { value: "~300 / day", label: "Items moved through moderation", note: "Across all brand clients on the platform" },
+      { value: "30", label: "Brand clients live on the platform", note: "Including global apparel, beauty, and toy brands" },
       { value: "3-stage", label: "Workflow automated end to end", note: "Premod → tagging → QA" },
     ],
     decisions: [
@@ -180,11 +175,8 @@ export const projects: Project[] = [
       { step: "Close", detail: "Review notification sent, email marked as read" },
     ],
     outcome: [
-      // TODO(valeria): ask Janey Health for these — even rough numbers are fine
-      // if you say they're estimates.
-      { value: "—", label: "Invoices processed per month", note: "TODO" },
-      { value: "—", label: "Minutes per invoice → automated", note: "TODO" },
-      { value: "~19s", label: "Machine run time, one observed execution", note: "Workflow runtime, not the time saved — replace this with minutes-per-invoice once you have it" },
+      { value: "~30 / month", label: "Invoices filed and booked with no manual entry", note: "The company's full monthly invoice volume" },
+      { value: "~19s", label: "Machine run time per invoice", note: "One observed production execution, start to finish" },
       { value: "0", label: "Payments made automatically", note: "By design — bills open unpaid for human approval" },
     ],
     decisions: [

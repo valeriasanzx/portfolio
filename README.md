@@ -2,7 +2,7 @@
 
 Source for my personal site: case studies on the GenAI and automation systems I've built.
 
-**Live:** _(add your Vercel URL here once deployed)_
+**Live:** <https://portfolio-eta-eight-46.vercel.app>
 
 ## What's here
 
