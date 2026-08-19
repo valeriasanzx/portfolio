@@ -65,6 +65,7 @@ export const projects: Project[] = [
     ],
     outcome: [
       { value: "~150 / day", label: "Creator posts labeled automatically", note: "Average daily volume, previously tagged by hand" },
+      { value: "83.3%", label: "mAP@50 on the trained detection model", note: "77.7% precision, 79.6% recall — trained on 1,797 labeled images" },
       { value: "0.80", label: "Confidence floor for a logged detection", note: "Below this the post is left unlabeled for a human — a blank is a cheaper error than a confident wrong answer" },
       { value: "Hourly", label: "Impressions refresh", note: "Replaced a metric that was stale the moment it was written" },
     ],
@@ -83,12 +84,12 @@ export const projects: Project[] = [
       },
     ],
     stack: ["Node.js", "Express", "PostgreSQL", "Roboflow", "FFmpeg", "Next.js", "TypeScript", "Railway"],
-    // Uncomment once public/demo/bloom-detection.mp4 exists — see README.
-    // demo: {
-    //   src: "/demo/bloom-detection.mp4",
-    //   poster: "/demo/bloom-detection.jpg",
-    //   caption: "The detection model running against creator video frames.",
-    // },
+    demo: {
+      src: "/demo/bloom-detection.mp4",
+      poster: "/demo/bloom-detection.jpg",
+      caption:
+        "The trained model running against creator video frames — bounding boxes with per-detection confidence on the left, raw prediction output on the right.",
+    },
     codePublic: false,
     codeNote:
       "Built during my internship, so the repository is Bloom's and stays private. The write-up above and the walkthrough below cover the architecture and the decisions.",

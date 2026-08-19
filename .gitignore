@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Source video masters — commit only the compressed derivatives
+public/demo/*.mov
